@@ -1,11 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >= 0.6.12 < 0.8.0;
 import "./BoringMath.sol";
-
-struct Rebase {
-    uint128 elastic;
-    uint128 base;
-}
+import "./Rebase.sol";
 
 /// @notice A rebasing library using overflow-/underflow-safe math.
 library RebaseLibrary {
