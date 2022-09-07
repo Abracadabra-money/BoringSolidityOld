@@ -24,9 +24,6 @@ abstract contract ERC20 is IERC20, Domain {
     /// @notice owner > nonce mapping. Used in `permit`.
     mapping(address => uint256) public nonces;
 
-    event Transfer(address indexed _from, address indexed _to, uint256 _value);
-    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
-
     /// @notice Transfers `amount` tokens from `msg.sender` to `to`.
     /// @param to The address to move the tokens.
     /// @param amount of the tokens to move.
